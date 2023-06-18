@@ -98,7 +98,5 @@ class CliParser :
                                 self.options[name] = option
                             else :
                                 self.options[name] = datatype(param)
-        print(params)
-        print(self.options)
         return self.options,params
     
