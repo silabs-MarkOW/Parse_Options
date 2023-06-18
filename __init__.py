@@ -78,7 +78,7 @@ class CliParser :
         opts,params = getopt.getopt(sys.argv[1:],'hv',self.long_opts)
         for opt,param in opts :
             if '-h' == opt :
-                exit_help()
+                self.exit_help()
             elif '-v' == opt or '--version' == opt :
                 print(s2b_get_version())
                 quit()
